@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="index.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+        integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        #carddiv {
+            border: 2px solid rgb(11, 1, 1);
+            /* text-align: center; */
+            /* font-size: 10px; */
+        }
+
+        
+        /* Basic styling for the card and slider */
+        #fetch {
+            width: 80%;
+            margin: auto;
+            
+        }
+        .card {
+            border: 1px solid #f1e7e7;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(35, 173, 13, 0.1);
+            width: 300px;
+            height: 600px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .slider {
+            /* position: relative; */
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+            left: 0%;
+            
+        }
+        .slider img {
+            position: absolute;
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            left: 0%;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .slider img.hidden {
+            opacity: 0;
+        }
+    .text{
+            margin-top: 80%;
+            font-size: 16px;
+            color: #757171;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+
+    <!---header-->
+    <section class="bg-light header">
+        <div class="container-fluid ">
+            <div class="row d-flex justify-content-between align-item-center">
+                <!-- logo -->
+                <div class="col-2">
+                    <div class="left">
+                        <ul class="d-flex list-unstyled">
+                            <img src="https://www.westside.com/cdn/shop/files/w-logo.png?v=1687335574&width=210" alt=""
+                                style="padding: 1%;">
+                        </ul>
+                    </div>
+                </div>
+                <!-- searchbar -->
+                <div class="col-2">
+                    <div class="right">
+                        <i class="bi bi-search"></i>
+                        <input type="text " placeholder="search">
+                    </div>
+                </div>
+
+                <!-- icon -->
+                <div class="col-2">
+                    <div class="icon">
+                        <i class="bi bi-suit-heart" id="one"></i>
+                        <button><a href="cart.html"><i class="bi bi-bag-check" id="two"></i></button></a>
+                        <button><a href="log.html" class="text-decoration-none text-dark">sign in</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- dropdown -->
+    <section class="bg-li">
+        <div class="col-8 m-auto">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+    
+    
+              <li class="nav-item dropdown list-unstyled">
+                <a class="nav-link" href="online.html" style="color: black; font-size: 15px;">
+                  ONLINE ONLY
+                </a>
+              </li>
+    
+    
+    
+    
+    
+              <li class="nav-item dropdown list-unstyled">
+                <a class="nav-link" href="woem.html" style="color: black;font-size: 15px;">
+                  WOMEN
+                </a>
+              </li>
+    
+    
+    
+              <li class="nav-item dropdown list-unstyled">
+                <a class="nav-link" href="men.html" style="color: black;  font-size: 15px;">
+                  MEN
+                </a>
+              </li>
+    
+    
+    
+              <li class="nav-item dropdown list-unstyled">
+                <a class="nav-link" href="kid.html" style="color: black; font-size: 15px;">
+                  KIDS
+                </a>
+              </li>
+    
+    
+    
+              <li class="nav-item dropdown list-unstyled">
+                <a class="nav-link" href="beauty.html" style="color: black; font-size: 15px;">
+                  BEAUTY
+                </a>
+              </li>
+    
+    
+    
+              <li class="nav-item dropdown list-unstyled">
+                <a class="nav-link" href="online.html" style="color: black;  font-size: 15px;"> HOME </a>
+              </li>
+            </div>
+          </nav>
+    
+        </div>
+      </section>
+    <section class="pt-4 ps-4">
+        <div class="container-fluid">
+            <p>Home / Woman/ <b>Blazer and Jackets for Women</b></p>
+        </div>
+    </section>
+    
+    
+    
+<!-- filter -->
+<a class="text-dark"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Filter</a>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">filter</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="row col-12">
+      <div class="col-12fecth_left">
+        <div class="container">
+          <div class="accordion" id="1">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  BRAND
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <input type="radio"> Nuon(2) <br>
+                  <input type="radio"> SOLEPLAY(15) <br>
+                  <input type="radio"> Studiowest(13) <br>
+                  <input type="radio"> WES Casuals(1) <br>
+                  <input type="radio"> WES Formals(5)<br>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Type of productc
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <input type="checkbox"> casual Shirts(2)<br>
+                  <input type="checkbox">Casual Shoes(10)<br>
+                  <input type="checkbox"> Extend Your Blowout (11)<br>
+                  <input type="checkbox"> Formal Shirts(6) <br>
+                  <input type="checkbox"> Formal Trousers(1)<br>
+                  <input type="checkbox"> Fragrance(4)<br>
+                  <input type="checkbox"> Jackets(2)<br>
+                  <input type="checkbox"> Perfume(5)<br>
+                  <input type="checkbox"> Trainers | Sneakers(5) <br>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Formulated">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  color
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <input type="checkbox"> rey(5)<br>
+                  <input type="checkbox"> Multi(1) <br>
+                  <input type="checkbox"> No Color(13)<br>
+                  <input type="checkbox"> Pink(4)<br>
+                  <input type="checkbox"> Gluten Free(38)<br>
+                  <input type="checkbox"> Purple(1)<br>
+                  <input type="checkbox"> White(5)<br>
+                  <input type="checkbox"> navy(7)<br>
+                  <input type="checkbox"> red(10)<br>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Formulated">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                  price range
+                </button>
+              </h2>
+              <div id="collapsefour" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <input type="checkbox"> 0-500 (5)<br>
+                  <input type="checkbox"> 501-1000 (11)<br>
+                  <input type="checkbox"> 1001-1500 (23)<br>
+                  <input type="checkbox"> 2000-2500 (6)<br>
+                  <input type="checkbox">2501-3000 (4)<br>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Formulated">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseThree">
+                  Formulated Without
+                </button>
+              </h2>
+              <div id="collapsefive" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <input type="radio"> Under $25.00(12)
+                </div>
+              </div>
+              <button class="b1">Show more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- sort -->
+<a class="text-dark"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sort</a>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+<div class="offcanvas-header">
+  <h5 id="offcanvasRightLabel">Sort by</h5>
+  <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+</div>
+<div class="offcanvas-body">
+  <div class="accordion-body">
+    <input type="checkbox"> Price (Highest To Lowest) <br>
+    <input type="checkbox"> Price (Lowest To Highest)<br>
+    <input type="checkbox">  New Arrivals<br>
+  </div>
+</div>
+</div>
+<div id="fetch" style="display: grid;grid-template-columns: repeat(3,1fr);gap: 3px;"></div>
+  </div>
+
+  
+<!-- script -->
+    <script>
+        function Fetchdata() {
+            fetch("https://internship-backend-3vy7.onrender.com/clothes")
+                .then((res) => res.json())
+                .then((data) => cardlist(data))
+                .catch((err) => console.log(err))
+        }
+        Fetchdata()
+    
+        function cardlist(data) {
+            const store = data.map((el) => singlecard(el.name, el.image_urls, el.price, el.brand, el.color))
+            document.getElementById("fetch").innerHTML = store.join("");
+        }
+    
+        function singlecard(name, image_urls, price, brand, color) {
+            let card = `
+            <div class="card">
+                <div class="slider">
+                    ${image_urls.map((url, index) => `
+                        <img src="${url}" class="${index === 0 ? '' : 'hidden'}" />
+                    `).join('')}
+                </div>
+                <div class="text">
+                    <h6>${name}</h6>
+                <h6>$${price}</h6>
+                <h6>${brand}</h6>
+                <h6>${color}</h6>
+                    </div>
+            </div>
+            `
+            return card
+        }
+    
+        document.addEventListener('DOMContentLoaded', () => {
+            setInterval(() => {
+                document.querySelectorAll('.slider').forEach(slider => {
+                    const images = slider.querySelectorAll('img');
+                    const current = Array.from(images).findIndex(img => !img.classList.contains('hidden'));
+                    images[current].classList.add('hidden');
+                    images[(current + 1) % images.length].classList.remove('hidden');
+                });
+            }, 3000);
+        });
+    </script>
+
+    
+    <!-- footer --->
+    <footer>
+      <div class="container-fluid d-flex">
+        <div class="row ">
+  
+          <div class="col-3 col-sm-12 col-lg-3" style="margin-top: 5%;">DOWNLOAD THE APP
+            <img src="https://cdn.shopify.com/s/files/1/0504/3457/2487/files/Frame_2.svg?v=1681220243" alt=""
+              style="padding: 10px;">
+            <img src="https://cdn.shopify.com/s/files/1/0504/3457/2487/files/Frame_3.svg?v=1681220243" alt=""
+              style="margin-right: 20px;">
+          </div>
+          <div class="col-3 col-sm-12 col-lg-3 d-sm-none d-lg-block " style="font-size:15px; margin-top: 5%;"><b>SHOP</b>
+            <p>WOMAN</p>
+            <p>MAN</p>
+            <p>KIDS</p>
+            <p>BEAUTY</p>
+            <p>HOME</p>
+          </div>
+          <div class="col-3 col-sm-12 col-lg-3 d-sm-none d-lg-block" style="font-size:15px; margin-top: 5%;"><b>SITES & STORES</b>
+            <p>ABOUT US</p>
+            <p> CONTACT US</p>
+            <p>STORE LOCATOR</p>
+            <p> MEDIA CENTER</p>
+            <p>SITEMAP</p>
+            <p>MEMBERSHIP</p>
+          </div>
+          <div class="col-3 col-lg-3 col-sm-12 m-auto subscribe" style="font-size: 15px; margin-top: 5%;"><b>JOIN OUR NEWSLETTER</b>
+            <p>Get the latest updates from our stores</p>
+            <input type="email" placeholder="Email id" class="footer">
+            <button class="b1">SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+      <hr>
+  
+      <div class="container">
+        <div class="ft">
+          <div class="row" style="align-items: center;">
+  
+            <div class="col-6 d-flex" style="color: gray;">
+              <div class="d1">
+                <p style="padding-right:15px; font-size: 15px;">TERMS & CONDITIONS</p>
+              </div>
+              <div class="d2">
+                <p style="padding-right:15px; font-size: 15px;">PRIVACY POLICY</p>
+              </div>
+              <div class="d3">
+                <p style="padding-right:15px; font-size: 15px;">RETURN POLICY</p>
+              </div>
+            </div>
+            <div class="col-6  icon1">
+              <i class="ri-instagram-fill" style="padding-right: 3%;"></i>
+              <i class="ri-telegram-fill" style="padding-right: 3%;"></i>
+              <i class="ri-facebook-circle-fill" style="padding-right: 3%;"></i>
+              <i class="ri-youtube-fill"></i>
+            </div>
+  
+  
+          </div>
+        </div>
+      </div>
+      </div>
+  
+    </footer>

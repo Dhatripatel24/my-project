@@ -1,0 +1,110 @@
+.right
+{
+    
+    background-color: rgb(254, 252, 252);
+    border: 1px solid black;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    margin-top: 5%;
+
+}
+.right i{
+    
+    padding-left: 0px;
+    
+}
+.right input{
+    padding-left: 20px;
+    border: none;
+}
+#one
+{
+    position: absolute;
+    top: 20px;
+    right: 255px;
+    
+}
+#two
+{
+    position: absolute;
+    top: 0px;
+    left:-290%
+}
+.icon p
+{
+    position: absolute;
+    top: 60px;
+    left:87%
+    
+}  
+.icon button 
+{
+    position: absolute;
+    top: 20px;
+    left:87%;
+    border: none;
+      
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  /* width: 100%; */
+  /* height: 100%; */
+  object-fit: cover;
+}
+.swiper-slider img
+{
+    height: 50%;
+}
+.signform input{
+    width: 100%;
+}
+.signform .btn{
+    background-color: black;
+    padding: 10px 15px;
+    margin-top:5%;
+    color: white;
+    text-decoration: none;
+    border-radius: 0%;
+}
+
+
+/* footer */
+.footer{
+    padding: 3%;
+    padding-right: 25%;
+}
+.b1{
+    background-color: black;
+     color: bisque; 
+    margin-top: 5%;
+    border-radius: none;
+    padding: 3%;
+    padding-right: 50%;
+    /* text-align: center; */
+}
+.icon1{
+    font-size: 35px; 
+    padding-inline-end: 20px;
+    color: gray;
+    text-align: right;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Additional CSS for icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <style>
+        .header .right {
+            display: flex;
+            align-items: center;
+        }
+        .header .right input {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            margin-left: 5px;
+            outline: none;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <section class="bg-light header py-2">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <div class="col-2">
+                    <img src="https://www.westside.com/cdn/shop/files/w-logo.png?v=1687335574&width=210" alt="Logo" style="padding: 1%;">
+                </div>
+
+                <!-- Search Bar -->
+                <div class="col-8 col-md-6 col-lg-4 d-flex align-items-center">
+                    <i class="bi bi-search"></i>
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+
+                <!-- Icons and Sign In -->
+                <div class="col-2 text-end">
+                    <i class="bi bi-suit-heart mx-2"></i>
+                    <i class="bi bi-bag-check mx-2"></i>
+                    <button class="btn btn-link"><a href="log.html" class="text-decoration-none text-dark">Sign In</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="online.html">ONLINE ONLY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="woem.html">WOMEN</a></li>
+                        <li class="nav-item"><a class="nav-link" href="men.html">MEN</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kid.html">KIDS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="beauty.html">BEAUTY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home.html">HOME</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main Section -->
+    <section class="pt-3 ps-4">
+        <div class="col-6 ps-5 pt-3 text-dark d-flex justify-content-around">
+            <p class="fw-bold">Shopping Bag</p>
+            <p>Wishlist</p>
+        </div>
+
+        <hr>
+
+        <div class="col-2 d-flex justify-content-between">
+            <button class="btn btn-dark text-light rounded-0">1</button>
+            <p><b>Bag</b></p>
+            <button class="btn btn-outline-dark rounded-0">2</button>
+            <p>Details</p>
+            <button class="btn btn-outline-dark rounded-0">3</button>
+            <p>Payment</p>
+        </div>
+    </section>
+
+    <!-- Product Cards Section -->
+    <section class="container my-4">
+        <div id="data-list-wrapper" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-md-3">
+                    <p class="fw-bold">DOWNLOAD THE APP</p>
+                    <img src="https://cdn.shopify.com/s/files/1/0504/3457/2487/files/Frame_2.svg?v=1681220243" alt="" class="img-fluid">
+                    <img src="https://cdn.shopify.com/s/files/1/0504/3457/2487/files/Frame_3.svg?v=1681220243" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <p class="fw-bold">SHOP</p>
+                    <p>WOMEN</p>
+                    <p>MEN</p>
+                    <p>KIDS</p>
+                    <p>BEAUTY</p>
+                    <p>HOME</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="fw-bold">SITES & STORES</p>
+                    <p>ABOUT US</p>
+                    <p>CONTACT US</p>
+                    <p>STORE LOCATOR</p>
+                    <p>MEDIA CENTER</p>
+                    <p>SITEMAP</p>
+                    <p>MEMBERSHIP</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="fw-bold">JOIN OUR NEWSLETTER</p>
+                    <p>Get the latest updates from our stores</p>
+                    <input type="email" class="form-control" placeholder="Email id">
+                    <button class="btn btn-dark mt-2">SUBSCRIBE</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">TERMS & CONDITIONS</p>
+                    <p class="mb-0">PRIVACY POLICY</p>
+                    <p class="mb-0">RETURN POLICY</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <i class="ri-instagram-fill mx-2"></i>
+                    <i class="ri-telegram-fill mx-2"></i>
+                    <i class="ri-facebook-circle-fill mx-2"></i>
+                    <i class="ri-youtube-fill mx-2"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXlG0zccYwIL6i+p2XnF+0eI5p6hO/t1H8FZV3MOj6RM6SRj5CpY0i5+0yD7" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVmFwC8pBBbB5Vdq3KGLFqnmIzbNxX+Qp31pKQQarEaH9QfkoNNTzn0ku+P2FZj3" crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        function FetchData() {
+            fetch("https://internship-backend-3vy7.onrender.com/cart")
+                .then((res) => res.json())
+                .then((data) =>CardList(data))
+                .catch((err) => console.log(err))
+        }
+        FetchData()
+
+        function CardList(data) {
+            const store = data.map((el) => SingleCard(el.image_urls, el.name, el.price, el.id, el.description))
+            document.getElementById("data-list-wrapper").innerHTML = store.join("")
+        }
+
+        function SingleCard(image_urls, title, price,  id, description) {
+            return `
+            <div class="col">
+                
+                    <div class="card h-100" data-id="${id}">
+                        <img src="${image_urls[0]}" class="card-img-top" alt="${title}">
+                        <div class="card-body">
+                            <h5 class="card-title">${name}</h5>
+                            
+                            <p class="card-text">Price: ${price}</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-primary" data-id="${id}">Edit</a>
+                                <button class="btn btn-danger" data-id="${id}">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            `
+        }
+
+        document.addEventListener("click", (e) => {
+            if (e.target.classList.contains("btn-danger")) {
+                DeleteData(e.target.dataset.id);
+            }
+        })
+
+        function DeleteData(id) {
+            fetch(`https://internship-backend-3vy7.onrender.com/cart/${id}`, {
+                method: 'DELETE',
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    alert("Deleted..")
+                    console.log(data)
+                })
+                .catch((err) => console.log(err))
+        }
+    </script>
+</body>
+
+</html>
